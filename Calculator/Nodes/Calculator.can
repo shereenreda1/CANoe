@@ -1,0 +1,290 @@
+﻿/*@!Encoding:65001*/
+includes
+{
+  
+}
+
+variables
+{
+  const OUTPUT_ARR_SIZE = 500;
+  char outputArr[OUTPUT_ARR_SIZE] = "";
+  const ADDITION_OPERATOR = 0;
+  const SUBTRACTION_OPERATOR = 1;
+  const MULTIBLICATION_OPERATOR = 2;
+  const DIVISION_OPERATOR = 3;
+  const MODULUS_OPERATOR = 4;
+  char operand1[OUTPUT_ARR_SIZE], operand2[OUTPUT_ARR_SIZE];
+  char operator;
+  int counter1=0;
+  int counter2=0;
+}
+
+void  Calculate()
+{
+  
+    switch (@Calculator::Operator)
+    {
+      case ADDITION_OPERATOR:
+        @Calculator::Result = _ceil(@Calculator::Op1) + _ceil(@Calculator::Op2);
+        break;
+      case SUBTRACTION_OPERATOR:
+        @Calculator::Result = _ceil(@Calculator::Op1) - _ceil(@Calculator::Op2);
+        break;
+      case MULTIBLICATION_OPERATOR:
+        @Calculator::Result = @Calculator::Op1 * @Calculator::Op2;
+        break;
+      case DIVISION_OPERATOR:
+        if (@Calculator::Op2 != 0)
+             @Calculator::Result = @Calculator::Op1 / @Calculator::Op2;
+        else
+            write("Error: Modulus by zero!");
+        break; 
+      case MODULUS_OPERATOR :
+        // Check for modulus by zero
+        if (@Calculator::Op2 != 0)
+            @Calculator::Result = ((Int)@Calculator::Op1 % (Int) @Calculator::Op2);
+        else
+            write("Error: Modulus by zero!");
+        break; 
+      default:
+        write( "invalide operator");
+        break;       
+    }
+
+}
+
+
+
+on sysvar Calculator::Display::Button_1
+{
+  if(@Calculator::Display::Button_1 == 1)
+  {
+    sysGetVariableString(sysvar::Calculator::Display::outputBox,outputArr,OUTPUT_ARR_SIZE);
+  
+      strncat(outputArr,"1",OUTPUT_ARR_SIZE);
+  
+    sysSetVariableString(sysvar::Calculator::Display::outputBox,outputArr);
+  }
+  
+}
+on sysvar Calculator::Display::Button_2
+{
+   if(@Calculator::Display::Button_2 == 1)
+  {
+    sysGetVariableString(sysvar::Calculator::Display::outputBox,outputArr,OUTPUT_ARR_SIZE);
+  
+    write(" string value is %s ",outputArr);
+  
+      strncat(outputArr,"2",OUTPUT_ARR_SIZE);
+  
+    sysSetVariableString(sysvar::Calculator::Display::outputBox,outputArr);
+  }
+}
+
+on sysvar Calculator::Display::Button_3
+{
+  if(@Calculator::Display::Button_3 == 1)
+  {
+    sysGetVariableString(sysvar::Calculator::Display::outputBox,outputArr,OUTPUT_ARR_SIZE);
+  
+      strncat(outputArr,"3",OUTPUT_ARR_SIZE);
+  
+    sysSetVariableString(sysvar::Calculator::Display::outputBox,outputArr);
+  } 
+}
+
+on sysvar Calculator::Display::Button_4
+{
+  if(@Calculator::Display::Button_4 == 1)
+  {
+    sysGetVariableString(sysvar::Calculator::Display::outputBox,outputArr,OUTPUT_ARR_SIZE);
+  
+      strncat(outputArr,"4",OUTPUT_ARR_SIZE);
+  
+    sysSetVariableString(sysvar::Calculator::Display::outputBox,outputArr);
+  }
+}
+
+on sysvar Calculator::Display::Button_5
+{
+  if(@Calculator::Display::Button_5 == 1)
+  {
+    sysGetVariableString(sysvar::Calculator::Display::outputBox,outputArr,OUTPUT_ARR_SIZE);
+  
+      strncat(outputArr,"5",OUTPUT_ARR_SIZE);
+  
+    sysSetVariableString(sysvar::Calculator::Display::outputBox,outputArr);
+  }
+}
+
+on sysvar Calculator::Display::Button_6
+{
+  if(@Calculator::Display::Button_6 == 1)
+  {
+    sysGetVariableString(sysvar::Calculator::Display::outputBox,outputArr,OUTPUT_ARR_SIZE);
+  
+      strncat(outputArr,"6",OUTPUT_ARR_SIZE);
+  
+    sysSetVariableString(sysvar::Calculator::Display::outputBox,outputArr);
+  }
+}
+
+on sysvar Calculator::Display::Button_7
+{
+  if(@Calculator::Display::Button_7 == 1)
+  {
+    sysGetVariableString(sysvar::Calculator::Display::outputBox,outputArr,OUTPUT_ARR_SIZE);
+  
+      strncat(outputArr,"7",OUTPUT_ARR_SIZE);
+  
+    sysSetVariableString(sysvar::Calculator::Display::outputBox,outputArr);
+  }
+}
+
+on sysvar Calculator::Display::Button_8
+{
+  if(@Calculator::Display::Button_8 == 1)
+  {
+    sysGetVariableString(sysvar::Calculator::Display::outputBox,outputArr,OUTPUT_ARR_SIZE);
+  
+      strncat(outputArr,"8",OUTPUT_ARR_SIZE);
+  
+    sysSetVariableString(sysvar::Calculator::Display::outputBox,outputArr);
+  }
+}
+
+on sysvar Calculator::Display::Button_9
+{
+  if(@Calculator::Display::Button_9 == 1)
+  {
+    sysGetVariableString(sysvar::Calculator::Display::outputBox,outputArr,OUTPUT_ARR_SIZE);
+  
+      strncat(outputArr,"9",OUTPUT_ARR_SIZE);
+  
+    sysSetVariableString(sysvar::Calculator::Display::outputBox,outputArr);
+  }
+}
+
+on sysvar Calculator::Display::Button_Addition
+{
+   if(@Calculator::Display::Button_Addition == 1)
+  {
+    sysGetVariableString(sysvar::Calculator::Display::outputBox,outputArr,OUTPUT_ARR_SIZE);
+  
+    write(" string value is %s ",outputArr);
+  
+      strncat(outputArr,"+",OUTPUT_ARR_SIZE);
+    @Calculator::Operator = ADDITION_OPERATOR;
+  
+    write(" string value is %s ",outputArr);
+    sysSetVariableString(sysvar::Calculator::Display::outputBox,outputArr);
+  }
+}
+
+on sysvar Calculator::Display::Button_Subtraction
+{
+   if(@Calculator::Display::Button_Subtraction == 1)
+  {
+    sysGetVariableString(sysvar::Calculator::Display::outputBox,outputArr,OUTPUT_ARR_SIZE);
+  
+    write(" string value is %s ",outputArr);
+  
+      strncat(outputArr,"-",OUTPUT_ARR_SIZE);
+    @Calculator::Operator = SUBTRACTION_OPERATOR;
+    write(" string value is %s ",outputArr);
+    sysSetVariableString(sysvar::Calculator::Display::outputBox,outputArr);
+  }
+}
+
+on sysvar Calculator::Display::Button_Multiplication
+{
+   if(@Calculator::Display::Button_Multiplication == 1)
+  {
+    sysGetVariableString(sysvar::Calculator::Display::outputBox,outputArr,OUTPUT_ARR_SIZE);
+  
+    write(" string value is %s ",outputArr);
+  
+      strncat(outputArr,"*",OUTPUT_ARR_SIZE);
+    @Calculator::Operator = MULTIBLICATION_OPERATOR;
+    write(" string value is %s ",outputArr);
+    sysSetVariableString(sysvar::Calculator::Display::outputBox,outputArr);
+  }
+}
+
+on sysvar Calculator::Display::Button_Division
+{
+   if(@Calculator::Display::Button_Division == 1)
+  {
+    sysGetVariableString(sysvar::Calculator::Display::outputBox,outputArr,OUTPUT_ARR_SIZE);
+  
+    write(" string value is %s ",outputArr);
+  
+      strncat(outputArr,"/",OUTPUT_ARR_SIZE);
+    @Calculator::Operator = DIVISION_OPERATOR;
+    write(" string value is %s ",outputArr);
+    sysSetVariableString(sysvar::Calculator::Display::outputBox,outputArr);
+  }
+}
+
+on sysvar Calculator::Display::Button_Modulus
+{
+   if(@Calculator::Display::Button_Modulus == 1)
+  {
+    sysGetVariableString(sysvar::Calculator::Display::outputBox,outputArr,OUTPUT_ARR_SIZE);
+  
+    write(" string value is %s ",outputArr);
+  
+      strncat(outputArr,"%",OUTPUT_ARR_SIZE);
+    @Calculator::Operator = MODULUS_OPERATOR;
+    write(" string value is %s ",outputArr);
+    sysSetVariableString(sysvar::Calculator::Display::outputBox,outputArr);
+  }
+}
+
+
+on sysvar Calculator::Display::Button_Clear
+{
+   if(@Calculator::Display::Button_Clear == 1)
+  {
+    sysSetVariableString(sysvar::Calculator::Display::outputBox,"");
+  }
+}
+
+
+on sysvar Calculator::Display::button_Equal
+{
+  if (@Calculator::Display::button_Equal == 1)
+  {
+    counter1 = 0;
+    while (outputArr[counter1] != '+' && outputArr[counter1] != '-' && outputArr[counter1] != '/' && outputArr[counter1] != '*' && outputArr[counter1] != '%' && outputArr[counter1] != '\0')
+    {
+      operand1[counter1] = outputArr[counter1];
+      counter1++;
+    }
+    operand1[counter1] = '\0'; // Ensure proper termination
+    counter1++; // Skip operator
+
+    counter2 = 0; // Reset counter2 for the second operand
+
+    while (outputArr[counter1] != '\0')
+    {
+      operand2[counter2] = outputArr[counter1];
+      counter1++;
+      counter2++;
+    }
+    operand2[counter2] = '\0'; // Ensure proper termination
+
+    @Calculator::Op1 = _atoi64(operand1);
+    @Calculator::Op2 = _atoi64(operand2);
+
+    Calculate();
+
+    sysGetVariableString(sysvar::Calculator::Display::outputBox, outputArr, OUTPUT_ARR_SIZE);
+    write("Current string value is %s", outputArr);
+    snprintf(outputArr, OUTPUT_ARR_SIZE, "%ld", (long)@Calculator::Result);
+
+    write("Updated string value is %s", outputArr);
+
+    sysSetVariableString(sysvar::Calculator::Display::outputBox, outputArr);
+  }
+}

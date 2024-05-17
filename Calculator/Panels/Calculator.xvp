@@ -1,0 +1,155 @@
+<?xml version="1.0"?>
+<Panel Type="Vector.CANalyzer.Panels.PanelSerializer, Vector.CANalyzer.Panels.Serializer, Version=17.3.91.0, Culture=neutral, PublicKeyToken=null">
+  <Object Type="Vector.CANalyzer.Panels.Runtime.Panel, Vector.CANalyzer.Panels.Common, Version=17.3.91.0, Culture=neutral, PublicKeyToken=null" Name="Panel" Children="Controls" ControlName="Calculator">
+    <Object Type="Vector.CANalyzer.Panels.Design.ButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=17.3.91.0, Culture=neutral, PublicKeyToken=null" Name="ButtonControl16" Children="Controls" ControlName="Button 16">
+      <Property Name="Name">ButtonControl16</Property>
+      <Property Name="Size">76, 25</Property>
+      <Property Name="Location">321, 148</Property>
+      <Property Name="Text">9</Property>
+      <Property Name="SymbolConfiguration">8;16;Calculator::Display;;;Button_9;1;;;-1;;;;;;0</Property>
+      <Property Name="TabIndex">18</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.ButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=17.3.91.0, Culture=neutral, PublicKeyToken=null" Name="ButtonControl15" Children="Controls" ControlName="Button 15">
+      <Property Name="Name">ButtonControl15</Property>
+      <Property Name="Size">76, 25</Property>
+      <Property Name="Location">321, 77</Property>
+      <Property Name="Text">3</Property>
+      <Property Name="SymbolConfiguration">8;16;Calculator::Display;;;Button_3;1;;;-1;;;;;;0</Property>
+      <Property Name="TabIndex">17</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.ButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=17.3.91.0, Culture=neutral, PublicKeyToken=null" Name="ButtonControl14" Children="Controls" ControlName="Button 14">
+      <Property Name="Name">ButtonControl14</Property>
+      <Property Name="Size">76, 25</Property>
+      <Property Name="Location">321, 113</Property>
+      <Property Name="Text">6</Property>
+      <Property Name="SymbolConfiguration">8;16;Calculator::Display;;;Button_6;1;;;-1;;;;;;0</Property>
+      <Property Name="TabIndex">16</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.ButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=17.3.91.0, Culture=neutral, PublicKeyToken=null" Name="ButtonControl13" Children="Controls" ControlName="Button 13">
+      <Property Name="Name">ButtonControl13</Property>
+      <Property Name="Size">76, 25</Property>
+      <Property Name="Location">230, 148</Property>
+      <Property Name="Text">8</Property>
+      <Property Name="SymbolConfiguration">8;16;Calculator::Display;;;Button_8;1;;;-1;;;;;;0</Property>
+      <Property Name="TabIndex">15</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.ButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=17.3.91.0, Culture=neutral, PublicKeyToken=null" Name="ButtonControl12" Children="Controls" ControlName="Button 12">
+      <Property Name="Name">ButtonControl12</Property>
+      <Property Name="Size">76, 25</Property>
+      <Property Name="Location">143, 148</Property>
+      <Property Name="Text">7</Property>
+      <Property Name="SymbolConfiguration">8;16;Calculator::Display;;;Button_7;1;;;-1;;;;;;0</Property>
+      <Property Name="TabIndex">14</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.ButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=17.3.91.0, Culture=neutral, PublicKeyToken=null" Name="ButtonControl11" Children="Controls" ControlName="Button 11">
+      <Property Name="Name">ButtonControl11</Property>
+      <Property Name="Size">76, 25</Property>
+      <Property Name="Location">230, 113</Property>
+      <Property Name="Text">5</Property>
+      <Property Name="SymbolConfiguration">8;16;Calculator::Display;;;Button_5;1;;;-1;;;;;;0</Property>
+      <Property Name="TabIndex">13</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.ButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=17.3.91.0, Culture=neutral, PublicKeyToken=null" Name="ButtonControl10" Children="Controls" ControlName="Button 10">
+      <Property Name="Name">ButtonControl10</Property>
+      <Property Name="Size">76, 25</Property>
+      <Property Name="Location">426, 159</Property>
+      <Property Name="Text">%</Property>
+      <Property Name="SymbolConfiguration">8;16;Calculator::Display;;;Button_Modulus;1;;;-1;;;;;;0</Property>
+      <Property Name="TabIndex">12</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.ButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=17.3.91.0, Culture=neutral, PublicKeyToken=null" Name="ButtonControl9" Children="Controls" ControlName="Button 9">
+      <Property Name="Name">ButtonControl9</Property>
+      <Property Name="Size">76, 25</Property>
+      <Property Name="Location">426, 131</Property>
+      <Property Name="Text">/</Property>
+      <Property Name="SymbolConfiguration">8;16;Calculator::Display;;;Button_Division;1;;;-1;;;;;;0</Property>
+      <Property Name="TabIndex">11</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.ButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=17.3.91.0, Culture=neutral, PublicKeyToken=null" Name="ButtonControl8" Children="Controls" ControlName="Button 8">
+      <Property Name="Name">ButtonControl8</Property>
+      <Property Name="Size">76, 25</Property>
+      <Property Name="Location">426, 103</Property>
+      <Property Name="Text">*</Property>
+      <Property Name="SymbolConfiguration">8;16;Calculator::Display;;;Button_Multiplication;1;;;-1;;;;;;0</Property>
+      <Property Name="TabIndex">10</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.ButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=17.3.91.0, Culture=neutral, PublicKeyToken=null" Name="ButtonControl7" Children="Controls" ControlName="Button 7">
+      <Property Name="Name">ButtonControl7</Property>
+      <Property Name="Size">76, 25</Property>
+      <Property Name="Location">426, 74</Property>
+      <Property Name="Text">-</Property>
+      <Property Name="SymbolConfiguration">8;16;Calculator::Display;;;Button_Subtraction;1;;;-1;;;;;;0</Property>
+      <Property Name="TabIndex">9</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.ButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=17.3.91.0, Culture=neutral, PublicKeyToken=null" Name="ButtonControl4" Children="Controls" ControlName="Button 4">
+      <Property Name="Name">ButtonControl4</Property>
+      <Property Name="Size">76, 25</Property>
+      <Property Name="Location">143, 113</Property>
+      <Property Name="Text">4</Property>
+      <Property Name="SymbolConfiguration">8;16;Calculator::Display;;;Button_4;1;;;-1;;;;;;0</Property>
+      <Property Name="TabIndex">8</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.ButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=17.3.91.0, Culture=neutral, PublicKeyToken=null" Name="ButtonControl3" Children="Controls" ControlName="Button 3">
+      <Property Name="Name">ButtonControl3</Property>
+      <Property Name="Size">76, 25</Property>
+      <Property Name="Location">426, 188</Property>
+      <Property Name="Text">CLEAR</Property>
+      <Property Name="SymbolConfiguration">8;16;Calculator::Display;;;Button_Clear;1;;;-1;;;;;;0</Property>
+      <Property Name="TabIndex">7</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.ButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=17.3.91.0, Culture=neutral, PublicKeyToken=null" Name="ButtonControl6" Children="Controls" ControlName="Button 6">
+      <Property Name="Name">ButtonControl6</Property>
+      <Property Name="Size">76, 25</Property>
+      <Property Name="Location">426, 45</Property>
+      <Property Name="Text">+</Property>
+      <Property Name="SymbolConfiguration">8;16;Calculator::Display;;;Button_Addition;1;;;-1;;;;;;0</Property>
+      <Property Name="TabIndex">6</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.ButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=17.3.91.0, Culture=neutral, PublicKeyToken=null" Name="ButtonControl5" Children="Controls" ControlName="Button 5">
+      <Property Name="Name">ButtonControl5</Property>
+      <Property Name="Size">254, 25</Property>
+      <Property Name="Location">143, 188</Property>
+      <Property Name="Text">=</Property>
+      <Property Name="SymbolConfiguration">8;16;Calculator::Display;;;button_Equal;1;;;-1;;;;;;0</Property>
+      <Property Name="TabIndex">5</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.ButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=17.3.91.0, Culture=neutral, PublicKeyToken=null" Name="ButtonControl2" Children="Controls" ControlName="Button 2">
+      <Property Name="Name">ButtonControl2</Property>
+      <Property Name="Size">76, 25</Property>
+      <Property Name="Location">230, 77</Property>
+      <Property Name="Text">2</Property>
+      <Property Name="SymbolConfiguration">8;16;Calculator::Display;;;Button_2;1;;;-1;;;;;;0</Property>
+      <Property Name="TabIndex">2</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.ButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=17.3.91.0, Culture=neutral, PublicKeyToken=null" Name="ButtonControl1" Children="Controls" ControlName="Button 1">
+      <Property Name="Name">ButtonControl1</Property>
+      <Property Name="Size">76, 25</Property>
+      <Property Name="Location">143, 77</Property>
+      <Property Name="Text">1</Property>
+      <Property Name="SymbolConfiguration">8;16;Calculator::Display;;;Button_1;1;;;-1;;;;;;0</Property>
+      <Property Name="TabIndex">1</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.TextBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=17.3.91.0, Culture=neutral, PublicKeyToken=null" Name="TextBoxControl1" Children="Controls" ControlName="Input/Output Box 1">
+      <Property Name="Name">TextBoxControl1</Property>
+      <Property Name="Size">267, 18</Property>
+      <Property Name="Location">141, 45</Property>
+      <Property Name="AlarmUpperTextColor">WindowText</Property>
+      <Property Name="ValueDecimalPlaces">0</Property>
+      <Property Name="AlarmLowerBkgColor">Salmon</Property>
+      <Property Name="ValueDisplay">Text</Property>
+      <Property Name="AlarmUpperBkgColor">IndianRed</Property>
+      <Property Name="AlarmLowerTextColor">WindowText</Property>
+      <Property Name="AlarmGeneralSettings">1;0;0;100</Property>
+      <Property Name="DisplayLabel">Hide</Property>
+      <Property Name="DescriptionText">
+      </Property>
+      <Property Name="DescriptionSize">0, 0</Property>
+      <Property Name="UsedValueTable">PhysicalValue</Property>
+      <Property Name="SymbolConfiguration">8;16;Calculator::Display;;;outputBox;4;;;-1;;;;;;0</Property>
+      <Property Name="TabIndex">0</Property>
+    </Object>
+    <Property Name="Name">Panel</Property>
+    <Property Name="Size">580, 270</Property>
+    <Property Name="BackColor">White</Property>
+  </Object>
+</Panel>
